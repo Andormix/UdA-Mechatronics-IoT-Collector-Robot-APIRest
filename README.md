@@ -947,9 +947,3 @@ Unless otherwise specified, the source code and documentation are provided for l
 ## Author
 
 Developed by **Andormix** for the **Universitat d'Andorra**.
-
-Repository:
-
-```text
-https://github.com/Andormix/UdA-mecatronica-robot-recolector-APIRest-IoT
-```
