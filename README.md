@@ -85,53 +85,8 @@ El sistema utiliza diferentes componentes electrónicos y plataformas:
 
 ## System Architecture
 
-```text
-┌────────────────────────────┐
-│      Robot Controller      │
-│        VEX / C++           │
-│                            │
-│  - Drivetrain              │
-│  - Distance sensor         │
-│  - Vision sensor           │
-│  - Collection mechanism    │
-└──────────────┬─────────────┘
-               │
-               │ Sensor states
-               │
-┌──────────────▼─────────────┐
-│       NodeMCU / Wi-Fi       │
-│                             │
-│  - DHT temperature/humidity │
-│  - CCS811 CO₂ / TVOC        │
-│  - Switch 1                 │
-│  - Switch 2                 │
-│  - HTTP GET client          │
-└──────────────┬──────────────┘
-               │
-               │ Wi-Fi / REST API
-               │
-┌──────────────▼─────────────┐
-│       Raspberry Pi          │
-│       Flask Server           │
-│                             │
-│  - Receives telemetry       │
-│  - Controls GPIO outputs    │
-│  - Generates alerts         │
-│  - Stores measurements      │
-└──────────────┬──────────────┘
-               │
-               │ MySQL connection
-               │
-┌──────────────▼─────────────┐
-│        MySQL Database        │
-│                             │
-│  - Temperature              │
-│  - Humidity                 │
-│  - CO₂                      │
-│  - TVOC                     │
-│  - Measurement timestamp    │
-└─────────────────────────────┘
-```
+<img width="302" height="962" alt="Untitled Diagram drawio (4)" src="https://github.com/user-attachments/assets/3bbfa5a6-20f0-4865-968f-f2b455e2efb6" />
+
 
 ---
 
